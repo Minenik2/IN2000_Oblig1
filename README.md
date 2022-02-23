@@ -1,6 +1,6 @@
 # IN2000_Oblig1
  First Task for UIO in the IN2000 program
- Making an android question app
+ Making an android question app, written in the kotlin programming language
  
  ## How to run
  to run this app you gonna have to open android studio and then open this project
