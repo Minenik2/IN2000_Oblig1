@@ -2,8 +2,8 @@
  First Task for UIO in the IN2000 program
  Making an android question app
  
- # How to run
+ ## How to run
  to run this app you gonna have to open android studio and then open this project
  
- # functions 
+ ## functions 
  this app has a small quiz minigame were if the user guesses correctly on the trivia question he will get a point. In total there are 3 questions.
