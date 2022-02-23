@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@drawable/miyazaki">
+
+    <TextView
+        android:id="@+id/tvQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Spørsmål"
+        app:layout_constraintBottom_toTopOf="@+id/btTrue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:padding="6dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fakta"
+        android:backgroundTint="#32CC2D"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestions"
+        app:layout_constraintBottom_toTopOf="@id/tvPoints"
+        app:layout_constraintEnd_toStartOf="@+id/btFalse"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <Button
+        android:id="@+id/btFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fleip"
+        android:backgroundTint="#CC2D2D"
+        app:layout_constraintBottom_toTopOf="@id/tvPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btTrue"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestions" />
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Poeng: 0"
+        app:layout_constraintBottom_toTopOf="@+id/btReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTrue"
+        android:background="@color/white"
+        android:padding="6dp"/>
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:hint="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

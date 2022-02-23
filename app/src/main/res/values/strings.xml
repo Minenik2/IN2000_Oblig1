@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">nikitafe_oblig1</string>
+        <string-array name="sp_options">
+            <item>Fluid ounce</item>
+            <item>Cup</item>
+            <item>Gallon</item>
+            <item>Hogshead</item>
+        </string-array>
+</resources>
